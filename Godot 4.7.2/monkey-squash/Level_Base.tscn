@@ -16,6 +16,8 @@ glow_enabled = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_xuox8"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_xuox8"]
+
 [node name="Node3D" type="Node3D" unique_id=2120636555]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=2061019883]
@@ -32,3 +34,7 @@ script = ExtResource("1_2os7i")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=278159544]
 transform = Transform3D(2.48, 0, 0, 0, 2.48, 0, 0, 0, 2.48, 0, 0.005829215, -0.036491632)
 mesh = SubResource("PlaneMesh_xuox8")
+
+[node name="cube" type="MeshInstance3D" parent="." unique_id=2042688140]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7076391, -0.4571002)
+mesh = SubResource("BoxMesh_xuox8")
